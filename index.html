@@ -109,14 +109,14 @@
                     </p>
 
                     <div class="flex flex-col items-center lg:items-start gap-4">
-                        <a href="https://buy.stripe.com/fZu7sKaoM3mseFq4fM08g00" target="_blank"
+                        <a href="#intake"
                             class="group inline-flex items-center justify-center gap-3 px-8 py-5 text-xl font-bold text-white bg-premium-red rounded-lg transition-all duration-300 hover:bg-premium-red-hover hover:-translate-y-1 shadow-lg hover:shadow-xl w-full md:w-auto">
-                            <span>Get My Valuation Snapshot</span>
+                            <span>Start My Valuation</span>
                             <i data-lucide="arrow-right"
                                 class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1"></i>
                         </a>
                         <p class="text-slate-500 text-sm font-medium mt-2">
-                            One-time payment of $997 • Secure Checkout
+                            First, tell me a little about your business • Then continue to secure $997 checkout
                         </p>
                     </div>
                 </div>
@@ -340,32 +340,49 @@
         </div>
     </section>
 
-    <!-- Final CTA -->
-    <section id="checkout" class="py-24 bg-slate-50 border-t border-slate-200">
-        <div class="container mx-auto px-6 md:px-12 text-center">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold font-heading text-slate-900 mb-12 leading-tight">
-                    Ready to get clarity?
-                </h2>
-
-                <div class="flex flex-col items-center gap-8">
-                    <a href="https://buy.stripe.com/fZu7sKaoM3mseFq4fM08g00" target="_blank"
-                        class="group inline-flex items-center justify-center gap-3 px-8 py-5 text-xl font-bold text-white bg-premium-red rounded-lg transition-all duration-300 hover:bg-premium-red-hover hover:-translate-y-1 shadow-lg hover:shadow-xl w-full md:w-auto">
-                        <span>Get My Valuation Snapshot</span>
-                        <i data-lucide="arrow-right"
-                            class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1"></i>
-                    </a>
-
-                    <div
-                        class="flex items-center justify-center gap-2 text-slate-500 font-medium bg-white px-4 py-2 rounded-full shadow-sm border border-slate-100">
-                        <i data-lucide="lock" class="w-4 h-4"></i>
-                        <span>Secure Checkout via Stripe</span>
-                    </div>
-
-                    <p class="text-base md:text-lg text-slate-500 max-w-lg mx-auto italic">
-                        Typical turnaround: within 72 hours after your session (complex cases may take longer).
-                    </p>
+    <!-- Intake & Checkout -->
+    <section id="intake" class="py-24 bg-slate-50 border-t border-slate-200">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold font-heading text-slate-900 mb-6 leading-tight">Start your valuation</h2>
+                    <p class="text-xl text-slate-700 leading-relaxed">Tell me a little about you and your business first. After you submit this form, you'll continue to the secure $997 Stripe checkout.</p>
                 </div>
+
+                <div class="bg-white rounded-3xl shadow-soft border border-slate-200 p-8 md:p-12 mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold font-heading text-slate-900 mb-8">What happens next</h3>
+                    <div class="grid md:grid-cols-2 gap-6 text-lg text-slate-700">
+                        <p><strong>1.</strong> Complete the short form below.</p>
+                        <p><strong>2.</strong> Continue to Stripe and make the one-time $997 payment.</p>
+                        <p><strong>3.</strong> Book your private 90-minute valuation session.</p>
+                        <p><strong>4.</strong> I review your information personally before we meet.</p>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/eugenioperez886@gmail.com" method="POST" class="bg-white rounded-3xl shadow-soft border border-slate-200 p-8 md:p-12 space-y-7">
+                    <input type="hidden" name="_subject" value="New Boomer Biz Valuator Lead">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://buy.stripe.com/fZu7sKaoM3mseFq4fM08g00">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div><label class="block font-semibold text-slate-800 mb-2">Your name *</label><input required name="Name" type="text" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></div>
+                        <div><label class="block font-semibold text-slate-800 mb-2">Email *</label><input required name="email" type="email" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></div>
+                        <div><label class="block font-semibold text-slate-800 mb-2">Phone *</label><input required name="Phone" type="tel" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></div>
+                        <div><label class="block font-semibold text-slate-800 mb-2">Business name *</label><input required name="Business Name" type="text" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></div>
+                        <div><label class="block font-semibold text-slate-800 mb-2">Type of business *</label><input required name="Business Type" type="text" placeholder="Example: auto repair, plumbing, retail" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></div>
+                        <div><label class="block font-semibold text-slate-800 mb-2">City & state *</label><input required name="Location" type="text" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></div>
+                        <div><label class="block font-semibold text-slate-800 mb-2">Approx. annual revenue</label><input name="Approx Annual Revenue" type="text" placeholder="An estimate is fine" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></div>
+                        <div><label class="block font-semibold text-slate-800 mb-2">Approx. owner earnings / cash flow</label><input name="Approx Owner Earnings or Cash Flow" type="text" placeholder="An estimate is fine" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></div>
+                    </div>
+                    <div><label class="block font-semibold text-slate-800 mb-2">What are you hoping to learn about your business?</label><textarea name="What I Want To Learn" rows="4" class="w-full rounded-xl border border-slate-300 px-4 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-red-700"></textarea></div>
+                    <p class="text-sm text-slate-500">Please don't send tax returns, bank information, Social Security numbers, or other sensitive documents through this form.</p>
+                    <button type="submit" class="group inline-flex items-center justify-center gap-3 px-8 py-5 text-xl font-bold text-white bg-premium-red rounded-lg transition-all duration-300 hover:bg-premium-red-hover hover:-translate-y-1 shadow-lg hover:shadow-xl w-full">
+                        Submit Information & Continue to Secure $997 Checkout
+                        <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                    </button>
+                    <p class="text-center text-slate-500 text-sm font-medium">Your information will be emailed directly to Eugenio Perez. Payment is handled securely by Stripe.</p>
+                </form>
             </div>
         </div>
     </section>
